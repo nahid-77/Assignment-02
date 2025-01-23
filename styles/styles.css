@@ -80,6 +80,26 @@
 .hamburger-menu {
   display: none;
 }
+
+/* marquee tag styles  */
+.marquee {
+  overflow: hidden;
+  white-space: nowrap;
+  box-sizing: border-box;
+  animation: marquee 10s linear infinite;
+  font-size: 2rem;
+  font-weight: 700;
+  color: aqua;
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
 /* Banner related styles */
 
 .banner {
@@ -492,7 +512,9 @@
   /* navbar related styles */
   .nav-links,
   .logo h1,
-  .contact-btn {
+  .contact-btn,
+  .carousel,
+  .featured-story{
     display: none;
   }
   .hamburger-menu {
@@ -523,6 +545,7 @@
   .banner-image img {
     width: 100%;
   }
+ 
 
   /* Our-stories related styles */
   .story-grid {
@@ -532,7 +555,11 @@
 
   .small-stories {
     display: grid;
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .small-story .date {
+    padding: 5px 10px;
   }
 
   /* footer related styles */
