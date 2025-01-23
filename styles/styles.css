@@ -357,7 +357,7 @@
   border-radius: 47.93px;
   background: rgb(149, 178, 38);
 }
-#blue-date{
+#blue-date {
   background: rgb(93, 88, 240);
 }
 
@@ -384,6 +384,107 @@
 
 .view-all-btn:hover {
   background-color: #4a4848;
+}
+
+/* Footer related styles */
+
+.footer {
+  background: rgb(1, 172, 253);
+  color: white;
+  padding: 40px 20px;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1140px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+
+.left-top-part {
+  display: flex;
+  margin: 20px;
+}
+
+.left-part {
+  max-width: 40%;
+}
+
+.left-part .footer-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.left-part p {
+  font-size: 1.25rem;
+  color: rgb(255, 255, 255);
+  font-weight: 400;
+  text-align: left;
+  margin-left: 30px;
+}
+
+.middle-part {
+  max-width: 30%;
+}
+
+.middle-part h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.middle-part ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.middle-part ul li {
+  margin-bottom: 20px;
+}
+
+.middle-part ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.25rem;
+  transition: color 0.3s;
+}
+
+.middle-part ul li a:hover {
+  color: #bcb693;
+}
+
+.right-part {
+  max-width: 30%;
+  text-align: center;
+}
+
+.right-part h3 {
+  font-size: 1.625rem;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.social-icons a {
+  display: inline-block;
+}
+
+.social-icons img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.social-icons img:hover {
+  transform: scale(1.1);
 }
 
 /* media-query styles for responsiveness */
@@ -423,7 +524,7 @@
     width: 100%;
   }
 
- /* Our-stories related styles */
+  /* Our-stories related styles */
   .story-grid {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
@@ -432,5 +533,26 @@
   .small-stories {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
+  }
+
+  /* footer related styles */
+  .footer-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 50px 50px;
+  }
+
+  .left-part {
+    max-width: 100%;
+    margin-bottom: 50px;
+  }
+  .middle-part {
+    max-width: 100%;
+    margin-bottom: 50px;
+    margin-left: 40px;
+  }
+  .right-part {
+    max-width: 100%;
   }
 }
